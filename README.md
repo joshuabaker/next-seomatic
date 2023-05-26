@@ -152,7 +152,7 @@ Here's an example of how to use it:
 import { Scripts } from "next-seomatic";
 
 export async default function Page() {
-  const { entry } = await fetchEntryViaGraphQl('uri');
+  const { entry } = await fetchGraphQl('your/uri');
   
   return (
     <>
