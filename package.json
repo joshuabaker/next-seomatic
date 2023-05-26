@@ -2,13 +2,15 @@
   "name": "next-seomatic",
   "version": "0.1.0",
   "description": "Components and functions to use SEOmatic data in Next.js projects.",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "repository": "git@github.com:joshuabaker/next-seomatic.git",
   "author": "Joshua Baker <160484+joshuabaker@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
     "format": "prettier --write .",
-    "lint": "prettier --check . && eslint . --ext .ts,.tsx"
+    "lint": "prettier --check . && eslint . --ext .ts,.tsx",
+    "build": "tsc",
+    "prepublishOnly": "yarn build"
   },
   "peerDependencies": {
     "next": "^13.4",
