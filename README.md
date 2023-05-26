@@ -1,3 +1,5 @@
+<img src="./assets/banner.svg" alt="Next SEOmatic" width="100%" />
+
 # Next SEOmatic
 
 Next SEOmatic is a library designed to integrate SEOmatic data into Next.js applications using the App Router. With this package, handling SEO data becomes a breeze, letting you focus on building your app.
