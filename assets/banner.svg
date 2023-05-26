@@ -1,8 +1,8 @@
 <svg width="828" height="400" viewBox="0 0 828 400" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="banner">
 <g id="base">
-<rect width="827.93" height="400" rx="8" fill="url(#paint0_linear_2797_134)"/>
-<rect x="0.5" y="0.5" width="826.93" height="399" rx="7.5" stroke="black" stroke-opacity="0.05" vector-effect="non-scaling-stroke"/>
+<rect width="827.93" height="400" rx="4" fill="url(#paint0_linear_2797_134)"/>
+<rect x="0.5" y="0.5" width="826.93" height="399" rx="3.5" stroke="black" stroke-opacity="0.05" vector-effect="non-scaling-stroke"/>
 </g>
 <g id="next">
 <mask id="mask0_2797_134" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="504" y="125" width="150" height="150">
