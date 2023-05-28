@@ -1,0 +1,4 @@
+dist
+
+# Ignore the readme as Github formats things incorrectly otherwise
+README.md
