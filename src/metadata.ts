@@ -26,7 +26,16 @@ export function getMetadata({
   const ogImage = getTag(tag, "og:image");
   const twitterImage = getTag(tag, "twitter:image");
 
+  let metadataBase: null | URL = null;
+
+  if (link?.canonical?.href) {
+    const canonicalUrl = new URL(link?.canonical?.href);
+    metadataBase = new URL(canonicalUrl.origin);
+  }
+
   return {
+    metadataBase,
+
     title: title?.title?.title,
 
     description: getTag(tag, "description"),
