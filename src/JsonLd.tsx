@@ -6,17 +6,27 @@ export interface JsonLdProps {
 }
 
 export const JsonLd: FC<JsonLdProps> = ({ metaJsonLdContainer }) => {
-  const jsonLd = parseContainer(metaJsonLdContainer);
+  let jsonLd = parseContainer(metaJsonLdContainer);
 
   if (!jsonLd) {
     return null;
+  }
+
+  if (!jsonLd["@context"] && !jsonLd["@graph"]) {
+    const values = Object.values(jsonLd);
+    jsonLd = {
+      "@context": values?.[0]?.["@context"] ?? "http://schema.org",
+      "@graph": values,
+    };
   }
 
   return (
     <script
       key="jsonLd"
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(jsonLd),
+      }}
     />
   );
 };
