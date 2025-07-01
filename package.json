@@ -1,6 +1,6 @@
 {
   "name": "next-seomatic",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Components and functions to use SEOmatic data in Next.js projects.",
   "repository": "git@github.com:joshuabaker/next-seomatic.git",
   "author": "Joshua Baker <160484+joshuabaker@users.noreply.github.com>",
