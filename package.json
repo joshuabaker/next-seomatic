@@ -16,9 +16,9 @@
     "prepare": "yarn build"
   },
   "peerDependencies": {
-    "next": "^13.4 || ^14",
-    "react": "^18",
-    "react-dom": "^18"
+    "next": "^13.4 || ^14 || ^15",
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19"
   },
   "devDependencies": {
     "@types/next": "^9.0.0",
