@@ -1,3 +1,6 @@
+> [!TIP]
+> Use the Next.js Metadata API (`generateMetadata`) with SEOmatic's GraphQL data directly.
+
 <img src="./assets/banner.svg" alt="Next SEOmatic" width="100%" />
 
 # Next SEOmatic
